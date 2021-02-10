@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Acaq</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <header>
+                <h1>AcaQ</h1>
+                <p><i class="material-icons">chevron_right</i>Buat kelompok</p>
+            </header>       
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="hero">
+                <div class="judul">
+                    <h2>Buat Kelompok</h2>
+                    <div class="fitur">
+                        <span class="disini">Buat Kelompok</span>
+                        <span>Daftar Acak</span>
+                        <span>Pilih Orang</span>
+                        <span>Angka Random</span>
+                    </div>
+                </div>
+                <div class="heroTeks">
+                    <div class="judul2">
+                        <h2>Buat daftar kelompok lebih <b>mudah</b> dan <b>adil</b></h2>
+                    </div>
+                </div>
+                <div class="note">
+                    NOTE : masukkan judul kelompok, tentukan jumlah kelompok atau jumlah anggota perkelompok, kemudian masukkan daftar nama yang akan dibuat kelompok (nama satu orang dengan yang lain dipisahkan dengan enter)
+                </div>
+            </div>
+
+            <!-- kolom 2 -->
+            <div class='areainput'>
+                <div class="judulkelompok">
+                    <p>Judul Kelompok <i>(opsional)</i></p>
+                    <input type="text" placeholder="misal: Kelompok Bahasa Indonesia">
+                </div>
+                <div class="jumlahKelompok">
+                    <select id ='jumlah'>
+                        <option value="anggota">Jumlah Anggota Per Kelompok</option>
+                        <option value="kelompok">Jumlah Kelompok</option>
+                    </select>
+                    <input type="number" id ='angka' value="3" min="1">
+                </div>
+                <div class="daftar">
+                    <p>Masukkan Daftar Nama</p>
+                    <textarea name="daftar"  id="daftar" ></textarea>
+                </div>
+                <!-- submit -->
+                <div class="submit">
+                    <button type="submit" class="kirim" onclick="submit()" >Buat</button>
+                    <button type="submit" class="reset" onclick="reset()" >Reset</button>
+                    <div class="attention">
+                        <span class="material-icons">error_outline</span>
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+       
+
+        <div class="hasil">
+            <h2><span>#</span>Kelompok Anda</h2>
+        </div>
+
+        
+    </div>
+    <div class="loading ...">LOADING...</div>
+    
+<script src='script.js'></script>
+</body>
+</html>
