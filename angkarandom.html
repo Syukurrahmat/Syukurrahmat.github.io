@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAngkaRandom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Acaq</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <header>
+                <h1>AcaQ</h1>
+                <p><i class="material-icons">chevron_right</i>Angka Random</p>
+            </header>       
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="hero">
+                <div class="judul">
+                    <h2>Angka Random</h2>
+                    <div class="fitur">
+                        <span>Buat Kelompok</span>
+                        <span>Daftar Acak</span>
+                        <span>Pilih Orang</span>
+                        <span  class="disini">Angka Random</span>
+                    </div>
+                </div>
+                <div class="heroTeks">
+                    <div class="judul2">
+                        <h2>Dapatkan angka serandom-randomya dengan <b>Cepat</b></h2>
+                    </div>
+                </div>
+                <div class="note">
+                    NOTE : Tentukan range angkanya, dan dapatkan angka Random tanpa repot
+                </div>
+            </div>
+
+            <!-- kolom 2 -->
+            <div class='areainput'>
+                <div class="input">
+                    <div class="from">
+                        <p>Dari</p>
+                        <input type="number" min=0 value="0">
+                    </div>
+                    <div class="to">
+                        <p>Sampai</p>
+                        <input type="number" min=0 value="1000">
+                    </div>
+                </div>
+                
+                <div class="minplus">
+                    <input type="checkbox" name="minplus" value="negatif" id="minplus" onchange="invers()">
+                    <label for="minplus">Ikutkan angka negatif </label >
+                </div>
+                <div class="banyak">
+                    <input type="checkbox" name="banyak" id="banyak" onchange="many()">
+                    <label for="banyak">Lebih dari satu angka random</label >
+                </div>
+                <div class="banyaknya">
+                    <p>Banyak angka random</p>
+                    <input type="number" min=2 value="2">
+                </div>
+                <!-- submit -->
+                <div class="submit">
+                    <button type="submit" class="kirim" onclick="submit()" >Generate</button>
+                    <button type="submit" class="reset" onclick="reset()" >Reset</button>
+                </div>
+                <div class="hasilBox">
+                </div>
+            </div>
+            </main>
+       
+
+        <div class="hasil">
+            <h2><span>#</span>Kelompok Anda</h2>
+        </div>
+
+        
+    </div>
+    <div class="loading ...">LOADING...</div>
+    
+<script src='scriptangkarandom.js'></script>
+</body>
+</html>
