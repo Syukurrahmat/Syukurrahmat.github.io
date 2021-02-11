@@ -6,8 +6,17 @@
     /* border: 1px solid salmon; */
 }
 
-html{scroll-behavior:smooth;}
-.container{max-width: 1090px; margin: 0 auto; padding: 0 30px;}
+html{
+    scroll-behavior:smooth;
+}
+a,a:active{
+    text-decoration: none;
+}
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 .body{
     /* background-color: #FAFBF8; */
     overflow-x: hidden;
