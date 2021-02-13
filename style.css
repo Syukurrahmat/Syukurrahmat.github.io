@@ -6,20 +6,15 @@
     /* border: 1px solid salmon; */
 }
 
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
+.container{max-width: 1080px; margin: 0 auto; padding: 0 30px;}
 a,a:active{
     text-decoration: none;
 }
-.container{
-    max-width: 1090px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
+
 .body{
     /* background-color: #FAFBF8; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
     background-color: #FAFBF8;
 }
@@ -84,7 +79,7 @@ main{
     margin: 75px 0 0 ;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .fitur{
     margin-top: 9px;
@@ -140,8 +135,9 @@ select{
 select:focus , input:focus, textarea:focus, button:focus{
     box-shadow: 2px 2px 3px hsla(46, 89%, 74%, 0.5);
 }
-    .areainput{
+.areainput{
     font-size: 16px;
+width: 100%;
 }
 
 .jumlahKelompok{
